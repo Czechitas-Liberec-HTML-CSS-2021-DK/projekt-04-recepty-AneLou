@@ -91,6 +91,7 @@ body p {
         position: absolute;
         top: 0.5rem;
         left: 16.6rem; /*MNE SE TO NEDARI NAK ELEGANTNE ZAROVNAT*/
+
     }
 /*kategorie a komentare sushi*/
     .sushicategory {
@@ -165,3 +166,200 @@ body p {
 
 
 /*TABLETOVE VIEW*/
+
+@media screen and (min-width:480px) {
+
+
+.vsecko {
+    display: flex;
+    flex-direction: column; /*at je to vse ve sloupci*/
+}
+
+.recepty2-5 {
+    display: flex;
+    flex-direction:row;
+} /*uda pozici 1 nahore, 4-5 pod tim serazene*/
+
+
+.main {
+    min-width: 480px; /*sirka tabletu*/
+    min-height: 250px; /*minimalni vyska dle zadani*/
+    padding: 1.25rem; /*dle zadani*/
+}
+
+.main .nadpis {
+    font-size: 2rem; /*vel pisma tablet*/
+    position: absolute;
+    top: 10rem; /*velikostne vypada ok*/
+}
+
+.jidlo .nadpis {
+        position: relative;
+        top: 5rem; /*pozice ok*/
+        font-weight: 800;
+        font-size: 1.1rem; /*1.5 bylo osklive*/
+     }
+
+/*kategorie a komentare burgery*/
+    .burgercategory {
+        position: absolute;
+        top: 0.5rem;
+    }
+
+    .burgerkomenty {
+        position: absolute;
+        top: 0.5rem;
+        left: 24rem; /*NENI TO ELEGANTNI, ALE FUNGUJE TO SNAD*/
+
+    }
+/*kategorie a komentare sushi*/
+    .sushicategory {
+        position: relative;
+        top: -4rem;
+        }
+    .sushikomenty {
+        position: relative;
+        top: -5.8rem;
+        left: 8rem;
+        }
+/*kategorie a komentare omacka*/
+    .omackacategory {
+        position: relative;
+        top: -4rem;
+        }
+    .omackakomenty {
+        position: relative;
+        top: -5.8rem;
+        left: 8rem;
+        }
+/*kategorie a komentare kure*/
+.kurecategory {
+    position: relative;
+    top: -4rem;
+    }
+.kurekomenty {
+    position: relative;
+    top: -5.8rem;
+    left: 8rem;
+    }
+
+/*kategorie a komentare grilovacka*/
+.grilovackacategory {
+    position: relative;
+    top: -4rem;
+    }
+.grilovackakomenty {
+    position: relative;
+    top: -5.8rem;
+    left: 8rem;
+    }
+
+.jidlo {
+    background-size: cover;
+    min-width: 240px; /*sirka tabletu/2*/
+    min-height: 150px; /*minimalni vyska dle zadani*/
+    max-height: 160px; /*podle me to chtelo definovat i max height, aby to nebylo ohavne, tablet nema nekonecnou delku taky*/
+    padding: 1.25rem; /*dle zadani*/
+}
+
+} /*konec tablet view*/
+
+/*POCITAC VIEW*/
+@media screen and (min-width: 860px) {
+
+
+        .vsecko {
+            display: flex;
+            flex-direction: row; /*at je to vse ve rade*/
+
+        }
+        
+
+        
+        .main {
+
+            min-height: 400px; /*minimalni vyska dle zadani*/
+            padding: 1.25rem; /*dle zadani*/
+            flex-grow: 1;
+        }
+        
+        .main .nadpis {
+            font-size: 3rem; /*vel pisma tablet*/
+            position: absolute;
+            top: 10rem; /*velikostne vypada ok*/
+        }
+        
+        .jidlo .nadpis {
+                position: relative;
+                top: 5rem; /*pozice ok*/
+                font-weight: 800;
+                font-size: 1.1rem; /*1.75 bylo osklive*/
+             }
+        
+        /*kategorie a komentare burgery*/
+            .burgercategory {
+                position: absolute;
+                top: 0.5rem;
+            }
+        
+            .burgerkomenty {
+                position: absolute;
+                top: 0.5rem;
+                left: 24rem; /*NENI TO ELEGANTNI, ALE FUNGUJE TO SNAD*/
+        
+            }
+        /*kategorie a komentare sushi*/
+            .sushicategory {
+                position: relative;
+                top: -4rem;
+                }
+            .sushikomenty {
+                position: relative;
+                top: -5.8rem;
+                left: 8rem;
+                }
+        /*kategorie a komentare omacka*/
+            .omackacategory {
+                position: relative;
+                top: -4rem;
+                }
+            .omackakomenty {
+                position: relative;
+                top: -5.8rem;
+                left: 8rem;
+                }
+        /*kategorie a komentare kure*/
+        .kurecategory {
+            position: relative;
+            top: -4rem;
+            }
+        .kurekomenty {
+            position: relative;
+            top: -5.8rem;
+            left: 8rem;
+            }
+        
+        /*kategorie a komentare grilovacka*/
+        .grilovackacategory {
+            position: relative;
+            top: -4rem;
+            }
+        .grilovackakomenty {
+            position: relative;
+            top: -5.8rem;
+            left: 8rem;
+            }
+        
+        .jidlo {
+            background-size: cover;
+            min-height: 200px; /*minimalni vyska dle zadani*/
+            flex-grow: 1;
+            padding: 1.25rem; /*dle zadani*/
+        }
+
+
+
+
+
+
+}
