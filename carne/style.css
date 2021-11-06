@@ -56,6 +56,9 @@ body p {
     max-width: 360px; /*sirka mobilu*/
     min-height: 200px; /*minimalni vyska dle zadani*/
     padding: 0.5rem; /*to bude hezky vsude*/
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: white;
 }
 
 .main .nadpis {
@@ -140,6 +143,9 @@ body p {
     max-width: 360px; /*sirka mobilu*/
     min-height: 90px; /*minimalni vyska dle zadani*/
     padding: 0.5rem;
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: white;
 }
 
 .jidlo .nadpis {
@@ -271,27 +277,42 @@ body p {
         .vsecko {
             display: flex;
             flex-direction: row; /*at je to vse ve rade*/
-
         }
         
 
         
         .main {
-
             min-height: 400px; /*minimalni vyska dle zadani*/
+            min-width: 380px; /*ja vim, ze to neni dokonaly... prosim o radu, jak to udelat bez definice sirky*/
             padding: 1.25rem; /*dle zadani*/
             flex-grow: 1;
+            flex-basis: 0;
+
+    
         }
         
+        .jidlo {
+            background-size: cover;
+            min-width: 380px; /*ja vim, ze to neni dokonaly... prosim o radu, jak to udelat bez definice sirky*/
+            min-height: 200px; /*minimalni vyska dle zadani*/
+            flex-grow: 2; /*proc mi to nezdvojnasobi oproti main :(*/
+            padding: 1.25rem; /*dle zadani*/
+            flex-basis: 0;
+
+        }
         .main .nadpis {
-            font-size: 3rem; /*vel pisma tablet*/
+            font-size: 2.5rem; /*vel pisma pc, 3 bylo moc*/
             position: absolute;
-            top: 10rem; /*velikostne vypada ok*/
+            top: 15rem; /*velikostne vypada ok*/
+            max-width: 300px;
+            word-wrap:break-word; /*zarovnani Domaci hovezi burger*/
+            overflow:hidden;
+            text-overflow:ellipsis;
         }
-        
+
         .jidlo .nadpis {
                 position: relative;
-                top: 5rem; /*pozice ok*/
+                top: 7.5rem; /*pozice ok*/
                 font-weight: 800;
                 font-size: 1.1rem; /*1.75 bylo osklive*/
              }
@@ -305,7 +326,7 @@ body p {
             .burgerkomenty {
                 position: absolute;
                 top: 0.5rem;
-                left: 24rem; /*NENI TO ELEGANTNI, ALE FUNGUJE TO SNAD*/
+                left: 18rem; /*NENI TO ELEGANTNI, ALE FUNGUJE TO SNAD*/
         
             }
         /*kategorie a komentare sushi*/
@@ -316,7 +337,7 @@ body p {
             .sushikomenty {
                 position: relative;
                 top: -5.8rem;
-                left: 8rem;
+                left: 16rem;
                 }
         /*kategorie a komentare omacka*/
             .omackacategory {
@@ -326,7 +347,7 @@ body p {
             .omackakomenty {
                 position: relative;
                 top: -5.8rem;
-                left: 8rem;
+                left: 16rem;
                 }
         /*kategorie a komentare kure*/
         .kurecategory {
@@ -336,7 +357,7 @@ body p {
         .kurekomenty {
             position: relative;
             top: -5.8rem;
-            left: 8rem;
+            left: 16rem;
             }
         
         /*kategorie a komentare grilovacka*/
@@ -347,19 +368,14 @@ body p {
         .grilovackakomenty {
             position: relative;
             top: -5.8rem;
-            left: 8rem;
+            left: 16rem;
             }
         
-        .jidlo {
-            background-size: cover;
-            min-height: 200px; /*minimalni vyska dle zadani*/
-            flex-grow: 1;
-            padding: 1.25rem; /*dle zadani*/
-        }
 
 
 
 
 
 
-}
+
+} /*konec pc view*/
